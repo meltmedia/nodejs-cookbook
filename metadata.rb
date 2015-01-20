@@ -12,6 +12,7 @@ recipe "nodejs::install_from_source", "Installs Node.JS from source"
 recipe "nodejs::install_from_binary", "Installs Node.JS from official binaries"
 recipe "nodejs::install_from_package", "Installs Node.JS from packages"
 recipe "nodejs::npm", "Installs npm from source - a package manager for node"
+recipe "nodejs::npm_update", "Updates npm using npm"
 
 depends "build-essential"
 depends "apt"
