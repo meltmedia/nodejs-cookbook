@@ -24,14 +24,14 @@ case node['platform_family']
     default['nodejs']['install_method'] = 'source'
 end
 
-default['nodejs']['version'] = '0.10.26'
+default['nodejs']['version'] = '4.0.0'
 default['nodejs']['checksum'] = 'ef5e4ea6f2689ed7f781355012b942a2347e0299da0804a58de8e6281c4b1daa'
 default['nodejs']['checksum_linux_x64'] = '305bf2983c65edea6dd2c9f3669b956251af03523d31cf0a0471504fd5920aac'
-default['nodejs']['checksum_linux_x86'] = '8fa2d952556c8b5aa37c077e2735c972c522510facaa4df76d4244be88f4dc0f'
+default['nodejs']['checksum_linux_x86'] = '444b0c2e38602699103e4adb76c9f15b76c405f58b1308751cdc194041a39b93'
 default['nodejs']['checksum_linux_arm-pi'] = '561ec2ebfe963be8d6129f82a7d1bc112fb8fbfc0a1323ebe38ef55850f25517'
 default['nodejs']['dir'] = '/usr/local'
 default['nodejs']['npm'] = '1.4.4'
-default['nodejs']['src_url'] = "http://nodejs.org/dist"
+default['nodejs']['src_url'] = "http://nodejs.org/dist/v4.0.0"
 default['nodejs']['make_threads'] = node['cpu'] ? node['cpu']['total'].to_i : 2
 default['nodejs']['check_sha'] = true
 
