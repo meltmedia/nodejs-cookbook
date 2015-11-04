@@ -29,6 +29,7 @@ distro_suffix = "-linux-#{arch}"
 
 # package_stub is for example: "node-v0.8.20-linux-x64"
 package_stub = "node-v#{node['nodejs']['version']}#{distro_suffix}"
+uri_path = "v#{node['nodejs']['version']}"
 nodejs_tar = "#{package_stub}.tar.gz"
 expected_checksum = node['nodejs']["checksum_linux_#{arch}"]
 
@@ -38,7 +39,7 @@ if node['nodejs']['version'].split('.')[1].to_i >= 5
 end
 
 # Let the user override the source url in the attributes
-nodejs_bin_url = "#{node['nodejs']['src_url']}/#{nodejs_tar_path}"
+nodejs_bin_url = "#{node['nodejs']['src_url']}/#{uri_path}/#{nodejs_tar_path}"
 
 # Download it:
 remote_file "/usr/local/src/#{nodejs_tar}" do

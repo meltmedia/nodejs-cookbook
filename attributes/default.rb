@@ -31,7 +31,7 @@ default['nodejs']['checksum_linux_x86'] = '444b0c2e38602699103e4adb76c9f15b76c40
 default['nodejs']['checksum_linux_arm-pi'] = '561ec2ebfe963be8d6129f82a7d1bc112fb8fbfc0a1323ebe38ef55850f25517'
 default['nodejs']['dir'] = '/usr/local'
 default['nodejs']['npm'] = '1.4.4'
-default['nodejs']['src_url'] = "http://nodejs.org/dist/v4.0.0"
+default['nodejs']['src_url'] = "http://nodejs.org/dist"
 default['nodejs']['make_threads'] = node['cpu'] ? node['cpu']['total'].to_i : 2
 default['nodejs']['check_sha'] = true
 
