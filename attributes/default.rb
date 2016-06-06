@@ -24,11 +24,10 @@ case node['platform_family']
     default['nodejs']['install_method'] = 'source'
 end
 
-default['nodejs']['version'] = '4.0.0'
-default['nodejs']['checksum'] = 'ef5e4ea6f2689ed7f781355012b942a2347e0299da0804a58de8e6281c4b1daa'
-default['nodejs']['checksum_linux_x64'] = '305bf2983c65edea6dd2c9f3669b956251af03523d31cf0a0471504fd5920aac'
-default['nodejs']['checksum_linux_x86'] = '444b0c2e38602699103e4adb76c9f15b76c405f58b1308751cdc194041a39b93'
-default['nodejs']['checksum_linux_arm-pi'] = '561ec2ebfe963be8d6129f82a7d1bc112fb8fbfc0a1323ebe38ef55850f25517'
+default['nodejs']['version'] = '4.4.5'
+default['nodejs']['checksum'] = '15d57c4a3696df8d5ef1bba452d38e5d27fc3c963760eeb218533c48381e89d5'
+default['nodejs']['checksum_linux_x64'] = '15d57c4a3696df8d5ef1bba452d38e5d27fc3c963760eeb218533c48381e89d5'
+default['nodejs']['checksum_linux_x86'] = '447b17542981c20f6792a20c31eb946c786e2cbd3bd1459f85c2cd0eb400e009'
 default['nodejs']['dir'] = '/usr/local'
 default['nodejs']['npm'] = '1.4.4'
 default['nodejs']['src_url'] = "http://nodejs.org/dist"
